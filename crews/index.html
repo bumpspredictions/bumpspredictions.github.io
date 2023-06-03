@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bumps Prediction</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container {
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Bumps Prediction</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Overall</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/crews">Crew-by-crew</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+        <p>Choose a crew to view, only crews listed with a start position by CUCBC are available.</p>
+        <p><select id="page-select" onchange="navigateToPage(this.value)">
+            <option value="Caius.M1.html">Caius M1</option>
+<option value="Caius.M2.html">Caius M2</option>
+<option value="Caius.M3.html">Caius M3</option>
+<option value="Caius.W1.html">Caius W1</option>
+<option value="Caius.W2.html">Caius W2</option>
+<option value="Caius.W3.html">Caius W3</option>
+<option value="Caius.W4.html">Caius W4</option>
+<option value="Christ.s.M1.html">Christ's M1</option>
+<option value="Christ.s.M2.html">Christ's M2</option>
+<option value="Christ.s.M3.html">Christ's M3</option>
+<option value="Christ.s.W1.html">Christ's W1</option>
+<option value="Christ.s.W2.html">Christ's W2</option>
+<option value="Churchill.M1.html">Churchill M1</option>
+<option value="Churchill.M2.html">Churchill M2</option>
+<option value="Churchill.M3.html">Churchill M3</option>
+<option value="Churchill.W1.html">Churchill W1</option>
+<option value="Churchill.W2.html">Churchill W2</option>
+<option value="Clare.Hall.M1.html">Clare Hall M1</option>
+<option value="Clare.Hall.W1.html">Clare Hall W1</option>
+<option value="Clare.M1.html">Clare M1</option>
+<option value="Clare.M2.html">Clare M2</option>
+<option value="Clare.M3.html">Clare M3</option>
+<option value="Clare.M4.html">Clare M4</option>
+<option value="Clare.W1.html">Clare W1</option>
+<option value="Clare.W2.html">Clare W2</option>
+<option value="Clare.W3.html">Clare W3</option>
+<option value="Clare.W4.html">Clare W4</option>
+<option value="Corpus.M1.html">Corpus M1</option>
+<option value="Corpus.M2.html">Corpus M2</option>
+<option value="Corpus.W1.html">Corpus W1</option>
+<option value="Corpus.W2.html">Corpus W2</option>
+<option value="Darwin.M1.html">Darwin M1</option>
+<option value="Darwin.M2.html">Darwin M2</option>
+<option value="Darwin.W1.html">Darwin W1</option>
+<option value="Darwin.W2.html">Darwin W2</option>
+<option value="Downing.M1.html">Downing M1</option>
+<option value="Downing.M2.html">Downing M2</option>
+<option value="Downing.W1.html">Downing W1</option>
+<option value="Downing.W2.html">Downing W2</option>
+<option value="Emmanual.M1.html">Emmanual M1</option>
+<option value="Emmanual.M2.html">Emmanual M2</option>
+<option value="Emmanual.M3.html">Emmanual M3</option>
+<option value="Emmanual.M4.html">Emmanual M4</option>
+<option value="Emmanual.W1.html">Emmanual W1</option>
+<option value="Emmanual.W2.html">Emmanual W2</option>
+<option value="Emmanual.W3.html">Emmanual W3</option>
+<option value="Emmanual.W4.html">Emmanual W4</option>
+<option value="First.and.Third.M1.html">First and Third M1</option>
+<option value="First.and.Third.M2.html">First and Third M2</option>
+<option value="First.and.Third.M3.html">First and Third M3</option>
+<option value="First.and.Third.W1.html">First and Third W1</option>
+<option value="First.and.Third.W2.html">First and Third W2</option>
+<option value="Fitzwilliam.M1.html">Fitzwilliam M1</option>
+<option value="Fitzwilliam.M2.html">Fitzwilliam M2</option>
+<option value="Fitzwilliam.M3.html">Fitzwilliam M3</option>
+<option value="Fitzwilliam.W1.html">Fitzwilliam W1</option>
+<option value="Fitzwilliam.W2.html">Fitzwilliam W2</option>
+<option value="Girton.M1.html">Girton M1</option>
+<option value="Girton.M2.html">Girton M2</option>
+<option value="Girton.W1.html">Girton W1</option>
+<option value="Girton.W2.html">Girton W2</option>
+<option value="Homerton.M1.html">Homerton M1</option>
+<option value="Homerton.M2.html">Homerton M2</option>
+<option value="Homerton.W1.html">Homerton W1</option>
+<option value="Homerton.W2.html">Homerton W2</option>
+<option value="Hughes.M1.html">Hughes M1</option>
+<option value="Hughes.M2.html">Hughes M2</option>
+<option value="Hughes.W1.html">Hughes W1</option>
+<option value="Hughes.W2.html">Hughes W2</option>
+<option value="Jesus.M1.html">Jesus M1</option>
+<option value="Jesus.M2.html">Jesus M2</option>
+<option value="Jesus.M3.html">Jesus M3</option>
+<option value="Jesus.M4.html">Jesus M4</option>
+<option value="Jesus.W1.html">Jesus W1</option>
+<option value="Jesus.W2.html">Jesus W2</option>
+<option value="Jesus.W3.html">Jesus W3</option>
+<option value="Jesus.W4.html">Jesus W4</option>
+<option value="King.s.M1.html">King's M1</option>
+<option value="King.s.M2.html">King's M2</option>
+<option value="King.s.W1.html">King's W1</option>
+<option value="King.s.W2.html">King's W2</option>
+<option value="Lady.Margaret.M1.html">Lady Margaret M1</option>
+<option value="Lady.Margaret.M2.html">Lady Margaret M2</option>
+<option value="Lady.Margaret.M3.html">Lady Margaret M3</option>
+<option value="Lady.Margaret.M4.html">Lady Margaret M4</option>
+<option value="Lady.Margaret.W1.html">Lady Margaret W1</option>
+<option value="Lady.Margaret.W2.html">Lady Margaret W2</option>
+<option value="Lady.Margaret.W3.html">Lady Margaret W3</option>
+<option value="Lucy.Cavendish.M1.html">Lucy Cavendish M1</option>
+<option value="Lucy.Cavendish.W1.html">Lucy Cavendish W1</option>
+<option value="Lucy.Cavendish.W2.html">Lucy Cavendish W2</option>
+<option value="Magdalene.M1.html">Magdalene M1</option>
+<option value="Magdalene.M2.html">Magdalene M2</option>
+<option value="Magdalene.M3.html">Magdalene M3</option>
+<option value="Magdalene.M4.html">Magdalene M4</option>
+<option value="Magdalene.W1.html">Magdalene W1</option>
+<option value="Magdalene.W2.html">Magdalene W2</option>
+<option value="Medwards.W1.html">Medwards W1</option>
+<option value="Medwards.W2.html">Medwards W2</option>
+<option value="Newnham.W1.html">Newnham W1</option>
+<option value="Newnham.W2.html">Newnham W2</option>
+<option value="Newnham.W3.html">Newnham W3</option>
+<option value="Pembroke.M1.html">Pembroke M1</option>
+<option value="Pembroke.M2.html">Pembroke M2</option>
+<option value="Pembroke.M3.html">Pembroke M3</option>
+<option value="Pembroke.W1.html">Pembroke W1</option>
+<option value="Pembroke.W2.html">Pembroke W2</option>
+<option value="Pembroke.W3.html">Pembroke W3</option>
+<option value="Peterhouse.M1.html">Peterhouse M1</option>
+<option value="Peterhouse.M2.html">Peterhouse M2</option>
+<option value="Peterhouse.W1.html">Peterhouse W1</option>
+<option value="Peterhouse.W2.html">Peterhouse W2</option>
+<option value="Queens..M1.html">Queens' M1</option>
+<option value="Queens..M2.html">Queens' M2</option>
+<option value="Queens..M3.html">Queens' M3</option>
+<option value="Queens..W1.html">Queens' W1</option>
+<option value="Queens..W2.html">Queens' W2</option>
+<option value="Queens..W3.html">Queens' W3</option>
+<option value="Robinson.M1.html">Robinson M1</option>
+<option value="Robinson.M2.html">Robinson M2</option>
+<option value="Robinson.W1.html">Robinson W1</option>
+<option value="Selwyn.M1.html">Selwyn M1</option>
+<option value="Selwyn.M2.html">Selwyn M2</option>
+<option value="Selwyn.W1.html">Selwyn W1</option>
+<option value="Sidney.M1.html">Sidney M1</option>
+<option value="Sidney.M2.html">Sidney M2</option>
+<option value="Sidney.W1.html">Sidney W1</option>
+<option value="Sidney.W2.html">Sidney W2</option>
+<option value="St..Catherine.s.M1.html">St. Catherine's M1</option>
+<option value="St..Catherine.s.M2.html">St. Catherine's M2</option>
+<option value="St..Catherine.s.M3.html">St. Catherine's M3</option>
+<option value="St..Catherine.s.W1.html">St. Catherine's W1</option>
+<option value="St..Catherine.s.W2.html">St. Catherine's W2</option>
+<option value="St..Catherine.s.W3.html">St. Catherine's W3</option>
+<option value="St..Edmund.s.M1.html">St. Edmund's M1</option>
+<option value="St..Edmund.s.W1.html">St. Edmund's W1</option>
+<option value="Trinity.Hall.M1.html">Trinity Hall M1</option>
+<option value="Trinity.Hall.M2.html">Trinity Hall M2</option>
+<option value="Trinity.Hall.W1.html">Trinity Hall W1</option>
+<option value="Trinity.Hall.W2.html">Trinity Hall W2</option>
+<option value="Trinity.Hall.W3.html">Trinity Hall W3</option>
+<option value="Vet.School.W1.html">Vet School W1</option>
+<option value="Wolfson.M1.html">Wolfson M1</option>
+<option value="Wolfson.M2.html">Wolfson M2</option>
+        </select></p>
+    </div>
+<script>
+    // Navigation function
+    function navigateToPage(pageId) {
+        if (pageId) {
+        window.location.href = pageId;
+        }
+    }
+    </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
