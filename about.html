@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Bumps Prediction</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container {
+      max-width: 15cm;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Bumps Prediction</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Overall</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/crews">Crew-by-crew</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>How our predictions work</h1>
+  <p>We use a three step process to come up with our predictions.</p>
+  <p>First, we use a statistical model to estimate each crew's speed using the head race results over the academic year. This process takes into account the overall speed of each event, differences in speed between divisions, the day-to-day variability of crews, and the historic performance of each club. We also share information between crews, for example if a club's M2 is quite fast, we'd expect their M1 to be too. If we have a good idea of how fast a club's W1 and W3 is, we would expect their W2 to be somewhere in between.</p>
+  <p>Second, we use our estimates from previous years, and Bumps results from those years, to estimate how the difference in crew speeds translates into the probability of bumping. These probabilities are assuming neither crew is bumped out and incorporate our expert judgement from years of experience in bumps races, since not that much data is available.</p>
+  <p>Finally, we simulate each Bumps ten thousand times. By doing so, we take into consideration our uncertainty over each crew's speed as well as the probability that they Bump. Our headline prediction is the chart that minimises the error between the prediction and these simulations, using a similar scoring to <a href="https://www.firstandthird.org/results/edit/playbumpit.phtml">BumpIt</a>.</p>
+  </div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
