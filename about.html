@@ -42,6 +42,9 @@
           <a class="nav-link" href="/events.html">Event adjustments</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="/results.html">Results database</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/about.html">How the model works</a>
         </li>
         <li class="nav-item">
@@ -57,6 +60,7 @@
   <div id="the-data" class="section level2">
   <h2>The data</h2>
   <p>The model uses head race results as the primary data source. We include the Fairbairn Cup (first boats only) and Lent term events with at least three college crews. We’d like to include Pembroke Regatta and other side-by-side events, but the model doesn’t currently support it. Adding this is on our list of future improvements.</p>
+  <p><a href="/results.html">View our results database.</a></p>
   </div>
   <div id="statistical-analysis" class="section level2">
   <h2>Statistical analysis</h2>
@@ -75,7 +79,7 @@
   <p>We currently estimate event conditions based on crew performance relative to expectations. In the future, we want to include additional data (e.g. wind and stream speed), but we’re struggling to measure these reliably, especially for off-Cam races, and to determine when each division ran to relate weather data to speed data.</p>
   <p>The adjustment has two components: one for the overall event and one for the specific division, applied similarly within the Bayesian hierarchical model.</p>
   <p>The intuition is that, if crews A and B had similar speeds in the same division last week but different speeds this week, we’d assume some of the difference is due to changing conditions. With just two crews this would be impossible, but by considering all race times, we can estimate this. When there isn’t enough data, we assume the events are similar, but with wide uncertainty.</p>
-  <p><a href="/events.html">View our adjustments for each division on our events page.</a></p>
+  <p><a href="/events.html">View our adjustments for each division on our events page</a> and <a href="/results.html">view our adjusted times for each result in our database</a>.</p>
   </div>
   <div id="other-variation" class="section level3">
   <h3>Other variation</h3>
